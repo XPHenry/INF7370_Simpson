@@ -1,6 +1,6 @@
 classes=2  
 train  = train.txt
 valid  = test.txt
-labels = Images/Labels.txt
+labels = label.txt
 names = simpson.names
 backup = backup/
