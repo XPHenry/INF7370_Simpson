@@ -1,5 +1,6 @@
-classes= 2  
-train  = train.txt  
-valid  = test.txt  
-names = simpson.names  
+classes=2  
+train  = train.txt
+valid  = test.txt
+labels = Images/Labels.txt
+names = simpson.names
 backup = backup/
