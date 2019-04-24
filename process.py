@@ -14,8 +14,8 @@ file_test = open('test.txt', 'w')
 
 for pathAndFilename in glob.iglob(os.path.join(current_dir+"/Images/002", "*.jpg")):
     title, ext = os.path.splitext(os.path.basename(pathAndFilename))
-    file_train.write(current_dir + "\\Images\\002" + "\\" + title + '.jpg' + "\n")
+    file_train.write("./Images/002/" + title + '.jpg' + "\n")
 
 for pathAndFilename2 in glob.iglob(os.path.join(current_dir+"/Test", "*.jpg")):
     title, ext = os.path.splitext(os.path.basename(pathAndFilename2))
-    file_test.write(current_dir + "\\Test" + "\\" + title + '.jpg' + "\n")
+    file_test.write("./Test/" + title + '.jpg' + "\n")
