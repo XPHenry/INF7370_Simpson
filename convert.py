@@ -4,7 +4,7 @@ import os
 from os import walk, getcwd
 from PIL import Image
 
-classes = ["001","002","003"]
+classes = ["001","002","003","004","005","006"]
 
 def convert(size, box):
     dw = 1./size[0]
@@ -22,11 +22,14 @@ def convert(size, box):
     
 """-------------------------------------------------------------------""" 
 
-""" Configure Paths"""   
-mypath = "./Labels/002/"
-outpath = "./Images/002/"
+""" Configure Paths"""
 
-cls = "002"
+folder = "005"
+
+mypath = "./Labels/" + folder + "/"
+outpath = "./Images/" + folder + "/"
+
+cls = folder
 if cls not in classes:
     exit(0)
 cls_id = classes.index(cls)
