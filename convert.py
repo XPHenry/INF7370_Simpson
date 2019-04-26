@@ -24,7 +24,7 @@ def convert(size, box):
 
 """ Configure Paths"""
 
-folder = "009"
+folder = "006"
 
 mypath = "./Labels/" + folder + "/"
 outpath = "./Images/" + folder + "/"

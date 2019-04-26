@@ -7,14 +7,14 @@ print(current_dir)
 
 
 # Create and/or truncate train.txt and test.txt
-#file_train = open('train.txt', 'a')
+file_train = open('train.txt', 'a')
 file_test = open('test.txt', 'w')
 
 # Populate train.txt and test.txt
 
-for pathAndFilename in glob.iglob(os.path.join(current_dir+"/Images/009", "*.jpg")):
+for pathAndFilename in glob.iglob(os.path.join(current_dir+"/Images/006", "*.jpg")):
     title, ext = os.path.splitext(os.path.basename(pathAndFilename))
-    #file_train.write("./Images/009/" + title + '.jpg' + "\n")
+    file_train.write("./Images/006/" + title + '.jpg' + "\n")
 
 for pathAndFilename2 in glob.iglob(os.path.join(current_dir+"/Test", "*.jpg")):
     title, ext = os.path.splitext(os.path.basename(pathAndFilename2))
