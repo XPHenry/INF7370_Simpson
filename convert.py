@@ -4,7 +4,7 @@ import os
 from os import walk, getcwd
 from PIL import Image
 
-classes = ["001","002","003","004","005","006","007","008"]
+classes = ["001","002","003","004","005","006","007","008","009","010"]
 
 def convert(size, box):
     dw = 1./size[0]
@@ -24,7 +24,7 @@ def convert(size, box):
 
 """ Configure Paths"""
 
-folder = "008"
+folder = "009"
 
 mypath = "./Labels/" + folder + "/"
 outpath = "./Images/" + folder + "/"

@@ -1,7 +1,7 @@
 import os
 
-path1 = "Images/008/"
-name1 = "milhouse_"
+path1 = "Images/010/"
+name1 = "krusty_"
 
 
 
