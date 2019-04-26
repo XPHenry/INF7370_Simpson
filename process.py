@@ -12,9 +12,9 @@ file_test = open('test.txt', 'w')
 
 # Populate train.txt and test.txt
 
-for pathAndFilename in glob.iglob(os.path.join(current_dir+"/Images/002", "*.jpg")):
+for pathAndFilename in glob.iglob(os.path.join(current_dir+"/Images/008", "*.jpg")):
     title, ext = os.path.splitext(os.path.basename(pathAndFilename))
-    file_train.write("./Images/002/" + title + '.jpg' + "\n")
+    file_train.write("./Images/008/" + title + '.jpg' + "\n")
 
 for pathAndFilename2 in glob.iglob(os.path.join(current_dir+"/Test", "*.jpg")):
     title, ext = os.path.splitext(os.path.basename(pathAndFilename2))
